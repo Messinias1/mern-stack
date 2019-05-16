@@ -1,0 +1,31 @@
+#wrapper {
+    text-align: center;
+}
+
+#goodResult {
+    color: green;
+}
+
+#badResult {
+    color: red;
+}
+
+#input {
+    border-radius: 5px;
+    border-bottom: 3px solid blue;
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+#button {
+    text-align: center;
+    border-radius: 50%;
+    background-color: grey;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+}
