@@ -30,6 +30,7 @@ app.get('/data', function(req, res) {
 
     console.log(input)
 
+    // look through the database and grab the word with the input
     Word.find({ word:input }, function(word, error) {
         // if (error) throw error
         if (word) {
@@ -43,4 +44,5 @@ app.get('/data', function(req, res) {
 // port listening
 app.listen(port, () => console.log(`App listening on port ${port}`));
 
+// export app
 module.exports = app;
