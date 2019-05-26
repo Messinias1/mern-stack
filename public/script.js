@@ -9,10 +9,10 @@ function handleClick() {
         .then (res => {
             console.log(res)
                 if (res.data.length > 0) {
-                    const returnedData = res.data[0].word
-                    document.getElementById('results').innerHTML = "<h2 id='goodResult'>The word " + returnedData +  " exists</h2>"
+                    const returnedData = res.data[0].word.toUpperCase()
+                    document.getElementById('results').innerHTML = "<h2 id='goodResult'>" + returnedData +  " exists</h2>"
                 } else {
-                    document.getElementById('results').innerHTML = "<h2 id='badResult'>The word does not exist</h2>"
+                    document.getElementById('results').innerHTML = "<h2 id='badResult'>Does not exist</h2>"
                 }
         })
 }

@@ -1,5 +1,13 @@
-#wrapper {
+/* #wrapper {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) );
+    background-size: cover;
+} */
+
+body {
     text-align: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('https://e3.365dm.com/18/10/768x432/skynews-dictionary-definition_4443820.jpg?20181005110326');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #goodResult {
@@ -14,10 +22,12 @@
     border-radius: 5px;
     border-bottom: 3px solid blue;
     font-size: 45px;
+    text-transform: lowercase;
 }
 
 h2 {
     font-size: 45px;
+    color: white;
 }
 
 #button {

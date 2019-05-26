@@ -15,6 +15,7 @@ const Word = mongoose.model('words')
 
 // mongoDB
 mongoose.connect('mongodb://localhost:27017/dictionary', {useNewUrlParser: true},
+
 // if statement function checking if there's a connection or error
 function (error) {
     if (error) {
@@ -32,11 +33,12 @@ app.get('/data', function(req, res) {
 
     // look through the database and grab the word with the input
     Word.find({ word:input }, function(word, error) {
+
         // if (error) throw error
         if (word) {
             res.send(word)
         } else {
-            res.send(error)
+            res.send(error)           
         }
     })
 })
